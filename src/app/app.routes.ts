@@ -18,6 +18,13 @@ export const routes: Routes = [
   loadComponent: () =>
     import('./modules/projects/projects/projects')
       .then(m => m.Projects)
+},
+{
+  path: 'projects/cyberai',
+  loadComponent: () =>
+    import('./modules/projects/cyberai/cyberai')
+      .then(m => m.Cyberai)
 }
+
 
 ];
