@@ -1,1 +1,16 @@
 @import './styles/theme';
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
