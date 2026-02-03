@@ -1,0 +1,7 @@
+<div class="attack-simulator">
+  <app-lab-node
+    *ngFor="let n of nodes; let i = index"
+    [node]="n"
+    [last]="i === nodes.length - 1"
+  ></app-lab-node>
+</div>

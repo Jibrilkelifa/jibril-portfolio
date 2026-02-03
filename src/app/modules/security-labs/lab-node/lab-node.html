@@ -1,0 +1,6 @@
+<p>lab-node works!</p>
+<div class="lab-node" [ngClass]="node.type">
+  <h4>{{ node.label }}</h4>
+  <p>{{ node.description }}</p>
+</div>
+<div *ngIf="!last" class="arrow">→</div>

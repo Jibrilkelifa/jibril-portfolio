@@ -5,7 +5,7 @@ import { PipelineComponent } from '../pipeline/pipeline';
   selector: 'app-cyberai',
   imports: [ PipelineComponent],
   templateUrl: './cyberai.html',
-  styleUrl: './cyberai.css',
+  styleUrl: './cyberai.scss',
 })
 export class Cyberai {
 

@@ -1,0 +1,36 @@
+.lab-node {
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 180px;
+  text-align: center;
+  color: #cbd5f5;
+  background: linear-gradient(145deg, #111827, #1f2937);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  animation: pulse 2s infinite;
+
+  &.API { border: 1px solid #22d3ee; }
+  &.SQL { border: 1px solid #facc15; }
+  &.Auth { border: 1px solid #f43f5e; }
+  &.Network { border: 1px solid #a78bfa; }
+
+  h4 { color: #38bdf8; margin-bottom: 0.4rem; }
+  p { font-size: 0.8rem; color: #94a3b8; }
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #22d3ee;
+  animation: flow 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px rgba(56,189,248,.2); }
+  50% { box-shadow: 0 0 30px rgba(56,189,248,.6); }
+  100% { box-shadow: 0 0 10px rgba(56,189,248,.2); }
+}
+
+@keyframes flow {
+  0% { opacity: .2; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(6px); }
+  100% { opacity: .2; transform: translateX(0); }
+}

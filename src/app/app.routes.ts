@@ -25,7 +25,23 @@ export const routes: Routes = [
   loadComponent: () =>
     import('./modules/projects/cyberai/cyberai')
       .then(m => m.Cyberai)
+},
+{
+  path: 'cyberai',
+  loadComponent: () =>
+    import('./modules/cyberai/cyberai/cyberai').then(
+      m => m.Cyberai
+    )
+},
+{
+  path: 'security-labs',
+  loadComponent: () =>
+    import('./modules/security-labs/security-labs/security-labs').then(
+      m => m.SecurityLabs
+    )
 }
+
+
 
 
 ];
