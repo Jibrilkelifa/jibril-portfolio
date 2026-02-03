@@ -1,8 +1,8 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 
 export const fade = trigger('fade', [
-  transition(':enter', [
-    style({ opacity: 0, transform: 'translateY(10px)' }),
-    animate('350ms ease-out')
+  transition('* <=> *', [
+    style({ opacity: 0, transform: 'translateY(8px)' }),
+    animate('250ms ease-out', style({ opacity: 1, transform: 'none' }))
   ])
 ]);

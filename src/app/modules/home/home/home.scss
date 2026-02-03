@@ -1,0 +1,55 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    font-weight: 400;
+    opacity: 0.85;
+  }
+
+  p {
+    max-width: 650px;
+    margin-top: 1.5rem;
+    line-height: 1.7;
+    opacity: 0.75;
+  }
+
+  .cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .primary {
+    background: #6366f1;
+    color: white;
+  }
+
+  .outline {
+    border: 1px solid #6366f1;
+    color: #6366f1;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+}

@@ -1,18 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Meta, Title } from '@angular/platform-browser';
+import { fade } from './shared/animations/fade';
+import { Navbar } from './shared/components/navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    
-
-  ],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet, Navbar],
+  animations: [fade],
+  templateUrl: './app.html'
 })
-export class App {
-  protected readonly title = signal('jibril-portfolio');
-  
-}
+export class App {}
