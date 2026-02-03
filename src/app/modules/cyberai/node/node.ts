@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-node',
-  imports: [],
+  selector: 'app-soc-node',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './node.html',
-  styleUrl: './node.css',
+  styleUrls: ['./node.scss']
 })
-export class Node {
-
+export class SocNodeComponent {
+  @Input() node!: { id: string; label: string; desc: string };
+  @Input() last = false;
 }

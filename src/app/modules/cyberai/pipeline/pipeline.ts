@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Node } from '../../cyberai/node/node';
+import { SocNodeComponent } from '../../cyberai/node/node';
 
 @Component({
   selector: 'app-pipeline',
   standalone: true,
-  imports: [CommonModule, Node],
+  imports: [CommonModule, SocNodeComponent],
   templateUrl: './pipeline.html',
   styleUrls: ['./pipeline.scss']
 })
