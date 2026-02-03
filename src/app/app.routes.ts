@@ -13,11 +13,12 @@ export const routes: Routes = [
       import('./modules/about/about')
         .then(m => m.About)
   },
-  {
+{
   path: 'projects',
   loadComponent: () =>
-    import('./modules/projects/projects/projects')
-      .then(m => m.Projects)
+    import('./modules/projects/projects/projects').then(
+      m => m.ProjectsComponent
+    )
 },
 {
   path: 'projects/cyberai',
