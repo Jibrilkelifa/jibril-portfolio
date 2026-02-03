@@ -1,10 +1,15 @@
-<div class="card">
-  <h3>{{ title }}</h3>
-  <p>{{ desc }}</p>
-  <button>Explore Architecture →</button>
-</div>
-<div class="card" [routerLink]="'/projects/cyberai'">
-  <h3>{{ title }}</h3>
-  <p>{{ desc }}</p>
-  <button>Explore Architecture →</button>
+<div class="project-card">
+  <h3>{{ project.title }}</h3>
+
+  <p class="desc">{{ project.description }}</p>
+
+  <div class="tech">
+    <span *ngFor="let tech of project.technologies">
+      {{ tech }}
+    </span>
+  </div>
+
+  <ul>
+    <li *ngFor="let h of project.highlights">{{ h }}</li>
+  </ul>
 </div>
