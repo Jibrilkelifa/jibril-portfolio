@@ -1,0 +1,23 @@
+.cert-card {
+  background: linear-gradient(145deg, #020617, #020617);
+  border: 1px solid rgba(56,189,248,.3);
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(56,189,248,.4);
+  }
+
+  h4 {
+    color: #38bdf8;
+    font-size: 0.9rem;
+  }
+
+  span {
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
+}
