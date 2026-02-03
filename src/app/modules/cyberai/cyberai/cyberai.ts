@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Pipeline } from "../pipeline/pipeline";
+import { PipelineComponent } from '../pipeline/pipeline';
 
 @Component({
   selector: 'app-cyberai',
-  imports: [Pipeline],
+  imports: [ PipelineComponent],
   templateUrl: './cyberai.html',
   styleUrl: './cyberai.css',
 })
