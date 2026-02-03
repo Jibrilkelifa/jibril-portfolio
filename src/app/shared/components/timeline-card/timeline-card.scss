@@ -1,0 +1,28 @@
+.timeline-card {
+  background: #020617;
+  border-left: 4px solid #22d3ee;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(34,211,238,.15);
+
+  .year {
+    color: #22d3ee;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #e5e7eb;
+    margin: 0.3rem 0;
+  }
+
+  h4 {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+
+  p {
+    color: #cbd5f5;
+    font-size: 0.85rem;
+  }
+}
