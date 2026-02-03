@@ -1,15 +1,16 @@
 .projects {
-  padding: 120px 10%;
-}
+  padding: 4rem 2rem;
 
-h2 {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: var(--neon-purple);
-}
+  h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #38bdf8;
+    margin-bottom: 2rem;
+  }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.8rem;
+  }
 }

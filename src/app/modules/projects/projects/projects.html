@@ -1,20 +1,10 @@
 <section class="projects">
-  <h2>Featured Systems</h2>
+  <h2>Projects & Systems</h2>
 
   <div class="grid">
     <app-project-card
-      title="CyberAI"
-      desc="AI-powered SOC automation & threat intelligence platform"
-    ></app-project-card>
-
-    <app-project-card
-      title="IRMS"
-      desc="Enterprise Incident Response Management System"
-    ></app-project-card>
-
-    <app-project-card
-      title="Internal Control Automation"
-      desc="Core banking process automation suite"
+      *ngFor="let p of projects"
+      [project]="p"
     ></app-project-card>
   </div>
 </section>
