@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { ProjectCard } from '../../../shared/components/project-card/project-card';
+import { CommonModule } from '@angular/common';
+import { ProjectCardComponent } from '../../../shared/components/project-card/project-card';
+import { PROJECTS } from '../../../data/projects.data';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ProjectCard],
+  imports: [CommonModule, ProjectCardComponent],
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss']
 })
-
-export class Projects {
-
+export class ProjectsComponent {
+  projects = PROJECTS;
 }
