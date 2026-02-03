@@ -39,7 +39,20 @@ export const routes: Routes = [
     import('./modules/security-labs/security-labs/security-labs').then(
       m => m.SecurityLabs
     )
+},
+{
+  path: 'timeline',
+  loadComponent: () =>
+    import('./modules/timeline/timeline/timeline').then(m => m.TimelineComponent)
+},
+{
+  path: 'certifications',
+  loadComponent: () =>
+    import('./modules/certifications/certifications/certifications').then(
+      m => m.CertificationsComponent
+    )
 }
+
 
 
 
