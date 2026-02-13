@@ -16,6 +16,13 @@ export const routes: Routes = [
     )
 },
 {
+  path: 'contact',
+  loadComponent: () =>
+    import('./modules/contact/contact').then(
+      m => m.Contact
+    )
+},
+{
   path: 'projects/cyberai',
   loadComponent: () =>
     import('./modules/projects/cyberai/cyberai')
