@@ -1,9 +1,11 @@
 import { Component, AfterViewInit, ElementRef } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import gsap from 'gsap';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
+  imports: [RouterLink, RouterLinkActive],
   styleUrls: ['./hero.scss'],
   standalone: true
 })
